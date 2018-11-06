@@ -35,7 +35,15 @@ function StopSound(soundobj) {
         </nav>
        
  </header>
-	       
+	 Text to Speech - all links on page spokenJavaScript
+
+<script>
+$('a').mouseenter(function() { // Attach this function to all mouseenter events for 'a' tags 
+  responsiveVoice.cancel(); // Cancel anything else that may currently be speaking
+  responsiveVoice.speak($(this).text()); // Speak the text contents of all nodes within the current 'a' tag
+});
+</script>
+      
 <body>
 
     <h1 class="title">Educational Attainment in the United States</h1>
